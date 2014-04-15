@@ -1,0 +1,25 @@
+{
+  "name": "log_event_issuer",
+  "version": "0.0.0",
+  "description": "create a Redmine issue when some conditions are verified from a the log",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "redmine",
+    "issue",
+    "log",
+    "errors"
+  ],
+  "author": "Costantino Giuliodori (ilkosta)",
+  "license": "BSD",
+  "devDependencies": {
+    "node-dev": "~2.3.0",
+    "node-inspector": "~0.7.3"
+  },
+  "dependencies": {
+    "redmine": "~0.2.3",
+    "lodash": "~2.4.1"
+  }
+}
