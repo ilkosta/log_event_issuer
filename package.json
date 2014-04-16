@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "redmine": "~0.2.3",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "always-tail": "~0.1.1"
   }
 }

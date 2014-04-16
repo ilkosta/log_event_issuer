@@ -16,7 +16,7 @@ if (!fake) {
     var issue = {
       project_id: config.redmine.issue_data.project_id,
       subject: '' + config.redmine.issue_data.subject_prefix + matchedTrigger.description,
-      assigned_to_id: matchedTrigger.assigned_to.id,
+      assigned_to_id: (matchedTrigger.assigned_to && matchedTrigger.assigned_to.id) ? matchedTrigger.assigned_to.id : null,
       tracker_id: config.redmine.issue_data.tracker_id,
       description: data
     };

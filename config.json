@@ -1,11 +1,6 @@
 {
 	"log_files": ["/usr/local/glassfish3/glassfish/domains/domain1/logs/server.log"],
 
-	"log_reader": {
-		"cmd": "tail",
-		"parameters": ["-f"],
-		"options": {}
-	},
 	"redmine": {
 		"host": "redmine1.intra",
 		"apiKey": "6b728add8477594ee8a6e4643a989b804d929fb3",
