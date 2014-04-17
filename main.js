@@ -12,6 +12,13 @@ var checkTriggerConditions = function (logMsgs) {
   _.forEach(config.triggers, function (t, tidx, array) {
     var matches = t.regexp.exec(logMsgs);
     if (matches && matches.length > 0) {
+      if(t.ignore_re) {
+        if(-1 !== _.findIndex(t.ignore_re, function(re) { 
+          var m = re.exec(logMsgs); return (m && m.length > 0);
+        })) {
+          return true;
+        }
+      }
       createIssue(t, logMsgs);
       return false; // break
     }
