@@ -7,7 +7,7 @@ var config = JSON.parse(fs.readFileSync('./config.json', {
 
 // compilazione delle regexp dei trigger
 _.forEach(config.triggers, function (t, tidx, array) {
-  t.regexp = new RegExp(t.regexp_str);
+  t.regexp = new RegExp(t.regexp_str,'i');
   if(t.ignore)
     t.ignore_re = _.map(t.ignore, function(restr) {
       return new RegExp(restr);

@@ -23,43 +23,76 @@
     "description": "errore nei dati specifici: DOC-002: probabilmente elemento ripetuto nell'xml caricato",
     "regexp_str": "DOC-002",
     "assigned_to": {
-      "id": 3,
-      "name": "Costantino Giuliodori"
+      "id": 61,
+      "name": "Arianna Cocola"
     }
   }, {
     "description": "errore di cast a BigDecimal",
     "regexp_str": "java.math.BigDecimal",
     "assigned_to": {
-      "id": 3,
-      "name": "Costantino Giuliodori"
+      "id": 61,
+      "name": "Arianna Cocola"
     }
   }, {
     "description": "possibile errore di cast",
-    "regexp_str": "java.lang.Long"
+    "regexp_str": "java.lang.Long",
+    "assigned_to": {
+      "id": 61,
+      "name": "Arianna Cocola"
+    }
   }, {
     "description": "possibile errore di cast",
-    "regexp_str": "cannot be cast to"
+    "regexp_str": "cannot be cast to",
+    "assigned_to": {
+      "id": 61,
+      "name": "Arianna Cocola"
+    }
   }, {
     "description": "NullPointerException",
     "regexp_str": "java.lang.NullPointerException",
     "assigned_to": {
-      "id": 3,
-      "name": "Costantino Giuliodori"
+      "id": 61,
+      "name": "Arianna Cocola"
     }
   }, {
+    "description": "errore di timestamp",
+    "regexp_str": "TimeStamp",
+    "assigned_to": {
+      "id": 61,
+      "name": "Arianna Cocola"
+    }
+  },
+
+  {
     "description": "errore generico",
-    "regexp_str": "exception"
+    "regexp_str": "exception",
+    "assigned_to": {
+      "id": 61,
+      "name": "Arianna Cocola"
+    },
+    "ignore": [
+      "could not extend file" ,
+      "CRLNotFoundException"
+      ]
   }, {
     "description": "errore generico",
     "regexp_str": "error",
+    "assigned_to": {
+      "id": 61,
+      "name": "Arianna Cocola"
+    },
     "ignore": [
+      "CRLNotFoundException",
+      "could not extend file",
       "esercito.difesa.it", 
       "camera.postecert.it", 
       "CRLUpdateTimer", 
-      "java.lang.IllegalArgumentException: unknown object in 'TimeStampResp' factory",
-      "Errore nel reperimento della marca temporale",
       ":389",
-      "LDAP: error code 32"
+      "LDAP: error code 32",
+      "it.eng.crypto.data.SignerUtil.+La connessione è stata interrotta",
+      "it.eng.crypto.data.SignerUtil.+404",
+      "it.eng.crypto.data.SignerUtil.+No data available in passed DER ",
+      "t.eng.crypto.data.SignerUtil.+ Empty input"
     ]
   }]
 }

@@ -21,6 +21,10 @@ if (!fake) {
       description: data
     };
 
+    if ( /Caused by/.test(data) )
+      issue.subject = '' + config.redmine.issue_data.subject_prefix + /Caused by.+/.exec(data)[0]
+    
+    
     redmine.postIssue(issue, function (err, data) {
       if (err) {
         console.log('Error: ' + err.message);
