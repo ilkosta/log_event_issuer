@@ -84,8 +84,6 @@
     "ignore": [
       "CRLNotFoundException",
       "could not extend file",
-      "esercito.difesa.it", 
-      "camera.postecert.it", 
       "CRLUpdateTimer", 
       ":389",
       "LDAP: error code 32",
